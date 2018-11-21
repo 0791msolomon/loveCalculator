@@ -52,7 +52,7 @@ class NameForm extends React.Component {
     let { nameOne, nameTwo, color, disengage } = this.state;
     return (
       <div>
-        <form>
+        <form onSubmit={this.calculateLove}>
           <div className="form-group">
             <label htmlFor="formGroupExampleInput">First Name</label>
             <input
